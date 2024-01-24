@@ -1,4 +1,4 @@
-import styles from "./donationFAIR.module.css";
+import styles from "./donationFair.module.css";
 import donationFairImage from "../img/donationFair.jpeg";
 
 const DonationFairCard = () => {
