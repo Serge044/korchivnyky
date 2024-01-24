@@ -1,0 +1,25 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgba(117, 231, 82, 0.342);
+}
+
+.title {
+  font-size: 50px;
+}
+
+.image {
+  width: 200px;
+}
+
+.text {
+  width: 200px;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

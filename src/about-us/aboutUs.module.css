@@ -1,0 +1,22 @@
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 630px;
+  background-color: rgba(157, 205, 189, 0.339);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.textContainer {
+  position: relative;
+  width: 700px;
+  height: 400px;
+  background-color: bisque;
+}
+
+.image {
+  position: relative;
+  width: 500px;
+  height: auto;
+}

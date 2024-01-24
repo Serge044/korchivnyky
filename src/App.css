@@ -1,0 +1,9 @@
+.siteContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.siteContent {
+  max-width: 1280px;
+  width: 100%;
+}

@@ -1,0 +1,58 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 490px;
+  background-color: rgba(224, 103, 42, 0.342);
+}
+
+.title {
+  font-size: 50px;
+}
+
+.form {
+  background-color: antiquewhite;
+  border-radius: 10px;
+  width: 502px;
+  padding: 20px;
+}
+
+.button {
+  width: 90px;
+  height: 40px;
+  background: #4caf50;
+  color: "white";
+  cursor: pointer;
+}
+
+.message {
+  width: 500px;
+  height: 150px;
+  padding: "8px";
+  min-height: 50px;
+}
+
+.name {
+  width: 200px;
+  padding: 8px;
+}
+
+.email {
+  width: 200px;
+  padding: 8px;
+}
+
+.nameAndEmailContainer {
+  width: 502 px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.formContainer {
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
