@@ -7,7 +7,7 @@ const OurCommunityCard = () => {
     <div className={styles.card}>
       <img src={ladaImage} alt="Lada cat" className={styles.image} />
       <div>
-        <p>Lada The Cat</p>
+        <p>Lada The Cat </p>
         <div className={styles.nameAndLinkContainer}>
           <img src={instaImage} alt="Instagram icon" className={styles.insta} />
           <a href="#">lada_the_cat</a>
