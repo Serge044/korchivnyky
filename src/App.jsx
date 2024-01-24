@@ -1,6 +1,6 @@
 import "./App.css";
 
-import Header from "./header/header";
+import Header from "./header/Header";
 import AboutUs from "./about-us/AboutUs";
 import ResultInNumbers from "./resultInNumbers/ResultInNumbers";
 import CurrentProjects from "./currentProjects/CurrentProjects";
