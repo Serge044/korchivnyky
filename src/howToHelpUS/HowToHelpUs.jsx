@@ -5,6 +5,7 @@ const HowToHelpUs = () => {
   return (
     <div className={styles.mainContainer}>
       <h3 className={styles.title}>Як ще можна допомогти</h3>
+      {/* test */}
       <div className={styles.cardContainer}>
         <HowToHelpUsCard />
         <HowToHelpUsCard />
