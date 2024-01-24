@@ -1,5 +1,5 @@
 import styles from "./header.module.css";
-import LogoKorchivnyky from "../reusableComponents/logoKorchivnyky";
+import LogoKorchivnyky from "../reusableComponents/LogoKorchivnyky";
 
 const Header = () => {
   return (
