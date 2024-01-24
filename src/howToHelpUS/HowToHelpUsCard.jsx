@@ -1,5 +1,5 @@
 import styles from "./howToHelpUs.module.css";
-import howToHelpUsImage from "../img/howToHelpUs.jpeg";
+import howToHelpUsImage from "../img/howTOHelpUs.jpeg";
 
 const HowToHelpUsCard = () => {
   return (

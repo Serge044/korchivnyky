@@ -1,5 +1,5 @@
 import styles from "./ourСommunity.module.css";
-import ladaImage from "../img/lada.jpeg";
+import ladaImage from "../img/Lada.jpeg";
 import instaImage from "../img/іnstagram_icon.png";
 
 const OurCommunityCard = () => {
