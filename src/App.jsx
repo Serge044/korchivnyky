@@ -11,7 +11,7 @@ import PhotoReports from "./photoReports/PhotoReports";
 import Chevrons from "./chevrons/Chevrons";
 import OurTeam from "./ourTeam/OurTeam";
 import OurСommunity from "./ourСommunity/OurСommunity";
-import OurPartners from "./ourPartners/ourPartners";
+import OurPartners from "./ourPartners/OurPartners";
 import Footer from "./footer/Footer";
 
 function App() {
