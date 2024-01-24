@@ -2,7 +2,7 @@ import styles from "./footer.module.css";
 import instaIcon from "../img/іnstagram_icon.png";
 import tgIcon from "../img/tgIcon.png";
 import xIcon from "../img/xIcon.png";
-import LogoKorchivnyky from "../reusableComponents/logoKorchivnyky";
+import LogoKorchivnyky from "../reusableComponents/LogoKorchivnyky";
 
 const Footer = () => {
   return (
