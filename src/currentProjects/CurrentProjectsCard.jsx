@@ -3,9 +3,9 @@ import image from "../img/currentProject.jpeg";
 
 const CurrentProjectsCard = () => {
   return (
-    <div className={styles.projectCart}>
+    <div className={styles["project-cart"]}>
       <img src={image} alt="Mitsubishi l200" className={styles.image} />
-      <div className={styles.textContainer}>
+      <div className={styles["text-container"]}>
         <h3>Пікапи для 401 ОСБ</h3>
         <p className={styles.para}>
           Збір на 5 пікапів для 401 Окремого Стрілецького Батальйону, який воює

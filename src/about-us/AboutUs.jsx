@@ -3,8 +3,8 @@ import styles from "./aboutUs.module.css";
 
 const AboutUs = () => {
   return (
-    <div className={styles.mainContainer}>
-      <div className={styles.textContainer}>
+    <div className={styles["main-container"]}>
+      <div className={styles["text-container"]}>
         <h3>Про нас</h3>
         <p>
           Ми - банда волонтерів “Корчівники”. Збираємо кошти, закуповуємо

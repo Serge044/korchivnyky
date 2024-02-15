@@ -1,4 +1,4 @@
-.mainContainer {
+.main-container {
   display: flex;
   flex-direction: column;
   padding-left: 30px;
@@ -10,7 +10,7 @@
   font-size: 50px;
 }
 
-.cardContainer {
+.card-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -42,7 +42,7 @@
   margin-right: 5px;
 }
 
-.nameAndLinkContainer {
+.name-and-link-container {
   display: flex;
   align-items: center;
 }

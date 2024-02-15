@@ -1,4 +1,4 @@
-.logoContainer {
+.logo-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -7,12 +7,12 @@
   background-color: rgba(0, 255, 255, 0.207);
 }
 
-.logoImage {
+.logo-image {
   width: 100px;
   height: 100px;
 }
 
-.titleAndSubtitleContainer {
+.title-and-subtitle-container {
   margin-left: 20px;
 }
 

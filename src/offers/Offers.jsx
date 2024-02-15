@@ -15,7 +15,7 @@ function Offers() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your form submission logic here
+    // Add form submission logic here
     console.log("Form submitted:", formData);
     clearForm();
   };
@@ -28,17 +28,17 @@ function Offers() {
     });
   };
   return (
-    <div className={styles.mainContainer}>
+    <div className={styles["main-container"]}>
       <h3 className={styles.title}>Є пропозиції?</h3>
       <p>
         Ми завжди раді співпраці і відкриті для комунікації, звʼяжіться з нами
         будь яким зручнимдля вас способом або залишіть повідомлення через форму
         нижче:
       </p>
-      <div className={styles.formContainer}>
+      <div className={styles["form-container"]}>
         <div className={styles.form}>
           <form onSubmit={handleSubmit}>
-            <div className={styles.nameAndEmailContainer}>
+            <div className={styles["name-and-email-container"]}>
               <div style={{ marginBottom: "15px" }}>
                 <label
                   style={{ display: "block", marginBottom: "5px" }}

@@ -7,7 +7,7 @@ import LogoKorchivnyky from "../reusableComponents/LogoKorchivnyky";
 const Footer = () => {
   return (
     <>
-      <div className={styles.mainContainer}>
+      <div className={styles["main-container"]}>
         <div className={styles.container}>
           <LogoKorchivnyky />
           <p className={styles.email}>korchivnyky@gmail.com</p>
@@ -21,7 +21,7 @@ const Footer = () => {
           <a href="#">Наша команда</a>
           <a href="#">Наші партнери</a>
         </div>
-        <div className={styles.socialsAndSupport}>
+        <div className={styles["socials-and-support"]}>
           <div className={styles.support}>підтримати ❤️</div>
           <div className={styles.socoalIconsContainer}>
             <img src={instaIcon} alt="Instagram" className={styles.icon} />
@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className={styles.allRightReservedContainer}>
+      <div className={styles["all-right-reserved-container"]}>
         <p>© 2022-2024 «Корчівники». Всі права захищені.</p>
       </div>
     </>

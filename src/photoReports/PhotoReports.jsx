@@ -3,9 +3,9 @@ import PhotoReportsCard from "./PhotoReportsCard";
 
 function PhotoReports() {
   return (
-    <div className={styles.mainContainer}>
+    <div className={styles["main-container"]}>
       <h3 className={styles.title}>Фотозвіти</h3>
-      <div className={styles.cardsContainer}>
+      <div className={styles["cards-container"]}>
         <PhotoReportsCard />
         <PhotoReportsCard />
         <PhotoReportsCard />
@@ -13,7 +13,7 @@ function PhotoReports() {
         <PhotoReportsCard />
         <PhotoReportsCard />
       </div>
-      <div className={styles.moreReportsColumn}>
+      <div className={styles["more-reports-column"]}>
         <a href="#">Більше звітів</a>
       </div>
     </div>

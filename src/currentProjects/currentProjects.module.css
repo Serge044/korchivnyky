@@ -1,4 +1,4 @@
-.mainContainer {
+.main-container {
   display: flex;
   flex-direction: column;
   background-color: rgba(249, 220, 0, 0.197);
@@ -10,7 +10,7 @@
   font-size: 50px;
 }
 
-.projectCart {
+.project-cart {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,7 +27,7 @@
   border-radius: 20px;
 }
 
-.textContainer {
+.text-container {
   width: 600px;
   height: 250px;
   background-color: rgba(245, 245, 220, 0.34);

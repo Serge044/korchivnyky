@@ -9,7 +9,7 @@ const OurPartnerCard = () => {
         alt="Hunters Garage"
         className={styles.image}
       />
-      <p className={styles.partnersTitle}>Hunters garage</p>
+      <p className={styles["partners-title"]}>Hunters garage</p>
     </div>
   );
 };

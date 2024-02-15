@@ -1,4 +1,4 @@
-.mainContainer {
+.main-container {
   display: flex;
   flex-direction: column;
   padding-left: 30px;
@@ -15,7 +15,7 @@
   border-radius: 10px;
 }
 
-.cardsContainer {
+.cards-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -28,7 +28,7 @@
   margin: 10px;
 }
 
-.moreReportsColumn {
+.more-reports-column {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;

@@ -3,8 +3,8 @@ import DonationFairCard from "./DonationFairCard";
 
 const DonationFair = () => {
   return (
-    <div className={styles.mainContainer}>
-      <div className={styles.textContainer}>
+    <div className={styles["main-container"]}>
+      <div className={styles["text-container"]}>
         <h3 className={styles.title}>Донатний ярмарок</h3>
         <p>
           Тут ви маєте можливість придбати унікальні трофеї від українських

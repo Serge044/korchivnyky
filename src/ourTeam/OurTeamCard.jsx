@@ -13,7 +13,7 @@ const OurTeamCard = () => {
         <br /> Плюси: вміє робити будь що.
         <br /> Мінуси: погано.
       </p>
-      <div className={styles.socialLinks}>
+      <div className={styles["social-links"]}>
         <img src={instaImage} alt="instagram icon" className={styles.links} />
       </div>
     </div>

@@ -16,8 +16,8 @@ import Footer from "./footer/Footer";
 
 function App() {
   return (
-    <div className="siteContainer">
-      <div className="siteContent">
+    <div className="site-container">
+      <div className="site-content">
         <Header />
         <AboutUs />
         <ResultInNumbers />

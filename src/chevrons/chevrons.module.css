@@ -1,4 +1,4 @@
-.mainContainer {
+.main-container {
   display: flex;
   flex-direction: column;
   padding-left: 30px;
@@ -16,7 +16,7 @@
   border-radius: 10px;
 }
 
-.cardsContainer {
+.cards-container {
   display: flex;
   flex-wrap: wrap;
 }

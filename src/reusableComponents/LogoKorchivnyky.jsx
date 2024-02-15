@@ -3,9 +3,9 @@ import logo from "../img/logo-korch.png";
 
 const LogoKorchivnyky = () => {
   return (
-    <div className={styles.logoContainer}>
-      <img src={logo} alt="Korchivnyky logo" className={styles.logoImage} />
-      <div className={styles.titleAndSubtitleContainer}>
+    <div className={styles["logo-container"]}>
+      <img src={logo} alt="Korchivnyky logo" className={styles["logo-image"]} />
+      <div className={styles["title-and-subtitle-container"]}>
         <h2 className={styles.title}>Корчівники</h2>
         <p>
           Наша зброя - ЗСУ,

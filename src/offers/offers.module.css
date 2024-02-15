@@ -1,4 +1,4 @@
-.mainContainer {
+.main-container {
   display: flex;
   flex-direction: column;
   padding-left: 30px;
@@ -43,14 +43,14 @@
   padding: 8px;
 }
 
-.nameAndEmailContainer {
+.name-and-email-container {
   width: 502 px;
   display: flex;
   justify-content: space-between;
   position: relative;
 }
 
-.formContainer {
+.form-container {
   padding-top: 30px;
   width: 100%;
   display: flex;

@@ -3,9 +3,9 @@ import OurPartnerCard from "./OurPartnerCard";
 
 const OurPartners = () => {
   return (
-    <div className={styles.mainContainer}>
+    <div className={styles["main-container"]}>
       <h3 className={styles.title}>Наші партнери</h3>
-      <div className={styles.cardContainer}>
+      <div className={styles["card-container"]}>
         <OurPartnerCard />
         <OurPartnerCard />
         <OurPartnerCard />

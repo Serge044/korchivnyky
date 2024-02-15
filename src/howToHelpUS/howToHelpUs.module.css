@@ -1,4 +1,4 @@
-.mainContainer {
+.main-container {
   display: flex;
   flex-direction: column;
   padding-left: 30px;
@@ -18,7 +18,7 @@
   width: 200px;
 }
 
-.cardContainer {
+.card-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

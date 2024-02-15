@@ -1,4 +1,4 @@
-.mainContainer {
+.main-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -10,7 +10,7 @@
   background-color: rgba(0, 4, 1, 0.358);
 }
 
-.allRightReservedContainer {
+.all-right-reserved-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@
   background-color: antiquewhite;
 }
 
-.socialsAndSupport {
+.socials-and-support {
   width: 300px;
   height: 200px;
   background-color: rgba(255, 216, 21, 0.746);
@@ -45,7 +45,7 @@
   border-radius: 5px;
 }
 
-.socoalIconsContainer {
+.socoal-Icons-container {
   display: flex;
   justify-content: space-around;
   align-items: center;

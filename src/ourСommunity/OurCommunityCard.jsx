@@ -8,7 +8,7 @@ const OurCommunityCard = () => {
       <img src={ladaImage} alt="Lada cat" className={styles.image} />
       <div>
         <p>Lada The Cat </p>
-        <div className={styles.nameAndLinkContainer}>
+        <div className={styles["name-and-link-container"]}>
           <img src={instaImage} alt="Instagram icon" className={styles.insta} />
           <a href="#">lada_the_cat</a>
         </div>
