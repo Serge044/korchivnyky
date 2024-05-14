@@ -1,0 +1,49 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: #f0f0f0; /* Soft grey background, can adjust for monochrome or pastel accents */
+}
+
+.title {
+  font-size: 2rem; /* Adjusted for a modern look */
+  margin-bottom: 20px;
+  color: #333; /* Darker text for contrast */
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555; /* Slightly lighter text for the description */
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 960px; /* Limiting max width for better layout */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff; /* White background for the cards */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.image {
+  width: 80px; /* Adjusted width */
+  height: auto; /* Adjust height to maintain aspect ratio */
+  margin-bottom: 10px; /* Space between image and text */
+  border-radius: 5px; /* Slightly rounded corners for the images */
+}
+
+.cardText {
+  color: #333; /* Text color for better readability */
+  text-align: center;
+}

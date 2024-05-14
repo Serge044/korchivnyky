@@ -1,18 +1,17 @@
 import './App.css';
 
-import Header from './header/Header';
-import AboutUs from './about-us/AboutUs';
-import ResultInNumbers from './resultInNumbers/ResultInNumbers';
-import CurrentProjects from './currentProjects/CurrentProjects';
-import DonationFair from './donationFair/DonationFair';
-import HowToHelpUs from './howToHelpUS/HowToHelpUs';
-import Offers from './offers/Offers';
-import PhotoReports from './photoReports/PhotoReports';
-import Chevrons from './chevrons/Chevrons';
-import OurTeam from './ourTeam/OurTeam';
-import OurСommunity from './ourСommunity/OurСommunity';
-import OurPartners from './ourPartners/OurPartners';
-import Footer from './footer/Footer';
+import Header from './Sections/Header/Header';
+import AboutUs from './Sections/AboutUs/AboutUs';
+import ResultInNumbers from './Sections/ResultsInNumbers/ResultsInNumbers';
+import CurrentProjects from './Sections/CurrentProjects/CurrentProjects';
+import DonationFair from './Sections/DonationFair/DonationFair';
+import HowToHelpUs from './Sections/HowToHelpUS/HowToHelpUs';
+import Offers from './Sections/Offers/Offers';
+import PhotoReports from './Sections/PhotoReports/PhotoReports';
+import Chevrons from './Sections/Chevrons/Chevrons';
+import OurTeam from './Sections/OurTeam/OurTeam';
+import OurСommunity from './Sections/OurСommunity/OurСommunity';
+import Footer from './Sections/Footer/Footer';
 
 function App() {
   return (
@@ -29,7 +28,6 @@ function App() {
         <Chevrons />
         <OurTeam />
         <OurСommunity />
-        <OurPartners />
         <Footer />
       </div>
     </div>

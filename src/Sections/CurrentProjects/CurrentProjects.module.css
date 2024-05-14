@@ -1,0 +1,96 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center cards vertically */
+  background-color: #fff; /* White background */
+  padding: 30px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  font-size: 2rem; /* 32px for a more modern scale */
+  margin-bottom: 1rem; /* 16px bottom margin */
+  color: #333; /* Dark grey for text */
+  text-align: center;
+}
+
+/* Include media query adjustments for responsive design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem; /* Slightly smaller on mobile */
+  }
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center contents */
+  width: 100%; /* Full width */
+  max-width: 960px; /* Max width */
+  background-color: #f5f5f5; /* Light grey background for cards */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 1rem; /* Space between cards */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Animation for hover */
+  padding: 20px; /* Padding around contents */
+  margin: 10px;
+  overflow: hidden; /* Hide overflow */
+}
+
+.project-card:hover {
+  transform: translateY(-10px); /* Lift card on hover */
+}
+
+.image {
+  width: 100%; /* Responsive image width */
+  object-fit: cover; /* Cover fit for no distortion */
+  border-radius: 10px; /* Rounded corners for image */
+}
+
+.text-container {
+  text-align: center; /* Center text */
+  padding: 1rem; /* 16px padding */
+}
+
+.para {
+  color: #666; /* Dark grey for paragraph text */
+  margin-bottom: 1rem; /* Space before button */
+}
+
+.button {
+  width: auto; /* Auto width based on content */
+  padding: 10px 20px; /* Padding for button */
+  background-color: var(--pastel-blue); /* Pastel color for button */
+  color: #fff; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners for button */
+  font-weight: bold; /* Bold font */
+  cursor: pointer; /* Cursor for button */
+  transition: background-color 0.2s ease-in-out; /* Animation for hover */
+}
+
+.button:hover {
+  background-color: var(--pastel-green); /* Change color on hover */
+}
+
+/* Include pastel colors as CSS variables */
+:root {
+  --pastel-blue: #a3cef1;
+  --pastel-green: #abebc6;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column; /* Stack elements on smaller screens */
+  }
+
+  .text-container,
+  .para {
+    width: 100%; /* Full width on mobile */
+  }
+}

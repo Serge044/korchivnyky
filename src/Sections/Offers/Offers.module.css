@@ -1,0 +1,60 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: #fff; /* Updated to a white background */
+  color: #000; /* Text color */
+}
+
+.title {
+  font-size: 2rem; /* Updated font size for better legibility */
+  margin-bottom: 1rem; /* Spacing */
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 2rem; /* Spacing */
+}
+
+.form {
+  background-color: #f3f3f3; /* Light grey background for the form */
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px; /* Max width for the form */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.inputGroup {
+  margin-bottom: 15px; /* Spacing between input fields */
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%; /* Full width */
+  padding: 8px;
+  margin-top: 5px; /* Spacing */
+  border-radius: 4px; /* Rounded corners */
+  border: 1px solid #ccc; /* Border color */
+  resize: vertical; /* Allows resizing textarea vertically */
+}
+
+textarea {
+  min-height: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #e0e0e0; /* Light grey, consider using a pastel color here */
+  color: #333; /* Button text color */
+  border: none;
+  border-radius: 20px; /* Rounded button */
+  cursor: pointer; /* Cursor change to indicate clickable */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #cacaca; /* Slightly darker on hover */
+}

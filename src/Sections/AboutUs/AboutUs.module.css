@@ -1,0 +1,69 @@
+.main-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #fff; /* white background */
+  color: #000; /* black text color */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    flex-direction: row;
+  }
+}
+
+.text-container {
+  padding: 20px;
+  background-color: #f8f9fa; /* light grey background for subtle contrast */
+  border-radius: 8px;
+  margin: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #212529; /* dark grey for the title */
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #495057; /* slightly lighter grey for the text */
+}
+
+.image-container {
+  margin: 15px;
+  border: 3px solid #dee2e6; /* adding a border to the image */
+}
+
+.image {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Pastel color palette for possible highlights */
+:root {
+  --pastel-blue: #a3cef1;
+  --pastel-pink: #f3bac3;
+  --pastel-yellow: #f9e79f;
+  --pastel-green: #abebc6;
+}
+
+/* Add this class to elements you want to highlight with pastel color */
+.pastel-highlight {
+  background-color: var(--pastel-pink); /* change to desired pastel variable */
+}
+
+/* Make sure to add responsive design for the image as well */
+@media (max-width: 767px) {
+  .image {
+    max-width: 100%;
+  }
+}

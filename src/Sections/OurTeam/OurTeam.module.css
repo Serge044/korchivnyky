@@ -1,0 +1,74 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: #ffffff; /* White background for a clean look */
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #000; /* Black color for contrast */
+  margin-bottom: 20px;
+}
+
+.card-container {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px; */
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8; /* Light grey for card background */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.image {
+  width: 100%; /* Make image responsive */
+  border-radius: 10px; /* Match card's border-radius */
+}
+
+.name {
+  font-size: 1.25rem;
+  color: #333; /* Dark grey for text */
+  margin-top: 10px;
+}
+
+.role {
+  font-size: 1rem;
+  color: #666; /* Lighter grey for less emphasis */
+}
+
+.description {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center; /* Center social links */
+}
+
+.links {
+  width: 25px;
+  filter: grayscale(100%); /* Monochrome icon */
+}
+
+/* Optional: Add hover effects for interactive elements */
+.card:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  transition: transform 0.3s ease;
+}
+
+.links:hover {
+  filter: none; /* Restore color on hover */
+  cursor: pointer;
+}

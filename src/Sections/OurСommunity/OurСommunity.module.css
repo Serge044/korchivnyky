@@ -1,0 +1,67 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: #fff; /* White background for a clean look */
+}
+
+.title {
+  font-size: 2.5rem; /* Modern and readable font size */
+  color: #000; /* Black color for high contrast */
+  margin-bottom: 20px;
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #666; /* Soft grey for text */
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #f8f8f8; /* Light grey, consider pastel accents */
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.name {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  color: #000; /* Black text, consider pastel for the icon or hover state */
+  text-decoration: none; /* Remove underline */
+}
+
+.insta {
+  width: 20px;
+  margin-right: 5px;
+}

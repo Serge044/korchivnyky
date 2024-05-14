@@ -1,0 +1,76 @@
+:root {
+  --pastel-blue: #a3cef1;
+  --pastel-pink: #f3bac3;
+  --pastel-yellow: #f9e79f;
+  --pastel-green: #abebc6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px; /* Reduced for a more standard header size */
+  background-color: #fff; /* White background */
+  padding: 0 30px;
+}
+
+.logo {
+  /* Add styles if necessary */
+}
+
+.navigation {
+  display: flex;
+  gap: 20px; /* Creates space between links */
+}
+
+.link {
+  color: #000; /* Black text color */
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--pastel-pink); /* Pastel color for hover state */
+  text-decoration: underline; /* Adds an underline on hover/focus */
+}
+
+.support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* Adjusted to fit the text */
+  padding: 10px 20px;
+  color: #fff; /* White text color */
+  background-color: #000; /* Black background */
+  font-size: 18px;
+  border-radius: 25px; /* Rounded edges */
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.support:hover,
+.support:focus {
+  background-color: var(--pastel-yellow); /* Pastel color for hover state */
+  transform: scale(1.05); /* Slight increase in size on hover */
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .support {
+    margin-top: 20px;
+  }
+}
