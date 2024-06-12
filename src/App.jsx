@@ -23,11 +23,11 @@ function App() {
         <CurrentProjects />
         <DonationFair />
         <HowToHelpUs />
-        <Offers />
         <PhotoReports />
         <Chevrons />
         <OurTeam />
         <OurСommunity />
+        <Offers />
         <Footer />
       </div>
     </div>

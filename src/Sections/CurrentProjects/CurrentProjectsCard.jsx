@@ -1,7 +1,7 @@
 import styles from './CurrentProjects.module.css';
 import image from '../../img/currentProject.jpeg';
 
-const TestCurrentProjectsCard = () => {
+const CurrentProjectsCard = () => {
   return (
     <div className={styles['project-card']}>
       <img src={image} alt='Mitsubishi l200' className={styles.image} />
@@ -21,4 +21,4 @@ const TestCurrentProjectsCard = () => {
   );
 };
 
-export default TestCurrentProjectsCard;
+export default CurrentProjectsCard;

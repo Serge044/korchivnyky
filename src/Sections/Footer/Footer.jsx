@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './footer.module.css';
+import styles from './Footer.module.css';
 import instaIcon from '../../img/іnstagram_icon.png';
 import tgIcon from '../../img/tgIcon.png';
 import xIcon from '../../img/xIcon.png';

@@ -1,14 +1,12 @@
 import styles from './CurrentProjects.module.css';
-import TestCurrentProjectsCard from './CurrentProjectsCard';
+import CurrentProjectsCard from './CurrentProjectsCard';
 
 const TestCurrentProjects = () => {
   return (
     <div className={styles['main-container']}>
-      <h3 className={styles.title}>Актуальні проєкти</h3>
+      <h3 className={styles.title}>Актуальний збір</h3>
       <div className={styles['cards-container']}>
-        <TestCurrentProjectsCard />
-        <TestCurrentProjectsCard />
-        <TestCurrentProjectsCard />
+        <CurrentProjectsCard />
       </div>
     </div>
   );
