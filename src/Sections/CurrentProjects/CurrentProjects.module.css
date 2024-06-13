@@ -41,10 +41,6 @@
   overflow: hidden; /* Hide overflow */
 }
 
-.project-card:hover {
-  transform: translateY(-10px); /* Lift card on hover */
-}
-
 .image {
   width: 100%; /* Responsive image width */
   object-fit: cover; /* Cover fit for no distortion */

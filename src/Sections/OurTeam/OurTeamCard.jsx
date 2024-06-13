@@ -1,24 +1,29 @@
 import React from 'react';
 import styles from './OurTeam.module.css';
-import sergeImage from '../../img/serge.jpeg';
-import instaImage from '../../img/іnstagram_icon.png';
 
-const TestOurTeamCard = () => {
+const OurTeamCard = ({
+  imageSrc,
+  imageAlt,
+  name,
+  role,
+  description,
+  instaImage,
+  instaAlt,
+  instaLink,
+}) => {
   return (
     <div className={styles.card}>
-      <img src={sergeImage} alt='Serge' className={styles.image} />
-      <h4 className={styles.name}>Serge Makogon</h4>
-      <p className={styles.role}>MR. Terminator</p>
-      <p className={styles.description}>
-        Крутий тіп!
-        <br /> Плюси: вміє робити будь що.
-        <br /> Мінуси: погано.
-      </p>
+      <img src={imageSrc} alt={imageAlt} className={styles.image} />
+      <h4 className={styles.name}>{name}</h4>
+      <p className={styles.role}>{role}</p>
+      <p className={styles.description}>{description}</p>
       <div className={styles['social-links']}>
-        <img src={instaImage} alt='Instagram icon' className={styles.links} />
+        <a href={instaLink} target='_blank' rel='noopener noreferrer'>
+          <img src={instaImage} alt={instaAlt} className={styles.links} />
+        </a>
       </div>
     </div>
   );
 };
 
-export default TestOurTeamCard;
+export default OurTeamCard;

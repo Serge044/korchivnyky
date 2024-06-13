@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styles from './PhotoReports.module.css';
-import TestPhotoReportsCard from './PhotoReportsCard';
+import PhotoReportsCard from './PhotoReportsCard';
 
-function TestPhotoReports() {
+function PhotoReports() {
   const [showAll, setShowAll] = useState(false);
 
   const handleShowMore = () => {
@@ -13,15 +13,15 @@ function TestPhotoReports() {
     <div className={styles['main-container']}>
       <h3 className={styles.title}>Фотозвіти</h3>
       <div className={styles['cards-container']}>
-        <TestPhotoReportsCard />
-        <TestPhotoReportsCard />
-        <TestPhotoReportsCard />
-        <TestPhotoReportsCard />
+        <PhotoReportsCard />
+        <PhotoReportsCard />
+        <PhotoReportsCard />
+        <PhotoReportsCard />
         {showAll && (
           <>
-            <TestPhotoReportsCard />
-            <TestPhotoReportsCard />
-            <TestPhotoReportsCard />
+            <PhotoReportsCard />
+            <PhotoReportsCard />
+            <PhotoReportsCard />
             {/* <TestPhotoReportsCard /> */}
           </>
         )}
@@ -35,4 +35,4 @@ function TestPhotoReports() {
   );
 }
 
-export default TestPhotoReports;
+export default PhotoReports;

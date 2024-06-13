@@ -1,18 +1,13 @@
 import React from 'react';
 import styles from './Chevrons.module.css';
-import bureviyShevronImage from '../../img/bureviyShevron.png';
 
-const TestChevronCard = () => {
+const ChevronCard = ({ imageSrc, altText, cardText }) => {
   return (
     <div className={styles.card}>
-      <img
-        src={bureviyShevronImage}
-        alt='Bureviy chevron'
-        className={styles.image}
-      />
-      <p className={styles.cardText}>НГУ Буревій</p>
+      <img src={imageSrc} alt={altText} className={styles.image} />
+      <p className={styles.cardText}>{cardText}</p>
     </div>
   );
 };
 
-export default TestChevronCard;
+export default ChevronCard;

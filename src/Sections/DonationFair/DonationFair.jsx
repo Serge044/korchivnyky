@@ -1,9 +1,67 @@
 import React, { useState } from 'react';
 import styles from './DonationFair.module.css';
-import TestDonationFairCard from './DonationFairCard';
+import DonationFairCard from './DonationFairCard';
+import donationFairImage from '../../img/donationFair.jpeg';
 
-const TestDonationFair = () => {
+const DonationFair = () => {
   const [showAllCards, setShowAllCards] = useState(false);
+
+  const cardsData = [
+    {
+      imageSrc: donationFairImage,
+      altText: 'Flag with Budanov signature',
+      cardText: 'Тубус РПГ-30 від 401 ОСБ',
+      buttonText: 'Донат 100к грн',
+      link: 'https://www.google.com/',
+    },
+    {
+      imageSrc: donationFairImage,
+      altText: 'Flag with Budanov signature',
+      cardText: 'Тубус РПГ-30 від 401 ОСБ',
+      buttonText: 'Донат 100к грн',
+      link: 'https://www.google.com/',
+    },
+    {
+      imageSrc: donationFairImage,
+      altText: 'Flag with Budanov signature',
+      cardText: 'Тубус РПГ-30 від 401 ОСБ',
+      buttonText: 'Донат 100к грн',
+      link: 'https://www.google.com/',
+    },
+    {
+      imageSrc: donationFairImage,
+      altText: 'Flag with Budanov signature',
+      cardText: 'Тубус РПГ-30 від 401 ОСБ',
+      buttonText: 'Донат 100к грн',
+      link: 'https://www.google.com/',
+    },
+  ];
+
+  if (showAllCards) {
+    cardsData.push(
+      {
+        imageSrc: donationFairImage,
+        altText: 'Flag with Budanov signature',
+        cardText: 'Тубус РПГ-30 від 401 ОСБ',
+        buttonText: 'Донат 100к грн',
+        link: 'https://www.google.com/',
+      },
+      {
+        imageSrc: donationFairImage,
+        altText: 'Flag with Budanov signature',
+        cardText: 'Тубус РПГ-30 від 401 ОСБ',
+        buttonText: 'Донат 100к грн',
+        link: 'https://www.google.com/',
+      },
+      {
+        imageSrc: donationFairImage,
+        altText: 'Flag with Budanov signature',
+        cardText: 'Тубус РПГ-30 від 401 ОСБ',
+        buttonText: 'Донат 100к грн',
+        link: 'https://www.google.com/',
+      }
+    );
+  }
 
   return (
     <div className={styles['main-container']}>
@@ -18,20 +76,16 @@ const TestDonationFair = () => {
         </p>
       </div>
       <div className={styles['cards-container']}>
-        <TestDonationFairCard />
-        <TestDonationFairCard />
-        <TestDonationFairCard />
-        <TestDonationFairCard />
-        {showAllCards && (
-          <>
-            <TestDonationFairCard />
-            <TestDonationFairCard />
-            <TestDonationFairCard />
-            <TestDonationFairCard />
-            <TestDonationFairCard />
-            <TestDonationFairCard />
-          </>
-        )}
+        {cardsData.map((card, index) => (
+          <DonationFairCard
+            key={index}
+            imageSrc={card.imageSrc}
+            altText={card.altText}
+            cardText={card.cardText}
+            buttonText={card.buttonText}
+            link={card.link}
+          />
+        ))}
       </div>
       <button
         className={styles['show-more']}
@@ -43,4 +97,4 @@ const TestDonationFair = () => {
   );
 };
 
-export default TestDonationFair;
+export default DonationFair;

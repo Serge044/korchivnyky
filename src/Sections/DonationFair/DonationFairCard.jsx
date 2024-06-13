@@ -1,23 +1,29 @@
 import React from 'react';
 import styles from './DonationFair.module.css';
-import donationFairImage from '../../img/donationFair.jpeg';
 
-const TestDonationFairCard = () => {
+const DonationFairCard = ({
+  imageSrc,
+  altText,
+  cardText,
+  buttonText,
+  link,
+}) => {
   return (
     <div className={styles['card']}>
-      <img
-        src={donationFairImage}
-        alt='Flag with Budanov signature'
-        className={styles.image}
-      />
+      <img src={imageSrc} alt={altText} className={styles.image} />
       <div className={styles['content']}>
-        <p className={styles.text}>Тубус РПГ-30 від 401 ОСБ</p>
-        <a href='#donate' className={styles.button}>
-          Донат 100к грн
+        <p className={styles.text}>{cardText}</p>
+        <a
+          href={link}
+          className={styles.button}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          {buttonText}
         </a>
       </div>
     </div>
   );
 };
 
-export default TestDonationFairCard;
+export default DonationFairCard;
