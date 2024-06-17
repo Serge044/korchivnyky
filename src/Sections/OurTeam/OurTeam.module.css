@@ -1,3 +1,10 @@
+:root {
+  --pastel-blue: #a3cef1;
+  --pastel-pink: #f3bac3;
+  --pastel-yellow: #f9e79f;
+  --pastel-green: #abebc6;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -13,10 +20,11 @@
 }
 
 .card-container {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 20px; */
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  width: 100%;
+  justify-items: center;
 }
 
 .card {
@@ -26,12 +34,18 @@
   background-color: #f8f8f8; /* Light grey for card background */
   border-radius: 10px;
   padding: 20px;
-  margin: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease; /* Smooth transform */
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .image {
-  width: 100%; /* Make image responsive */
+  width: 100%;
+  max-width: 200px; /* Limit image width */
+  height: auto;
   border-radius: 10px; /* Match card's border-radius */
 }
 
@@ -49,6 +63,7 @@
 .description {
   text-align: center;
   margin-top: 10px;
+  color: #555;
 }
 
 .social-links {
@@ -62,13 +77,83 @@
   filter: grayscale(100%); /* Monochrome icon */
 }
 
-/* Optional: Add hover effects for interactive elements */
-.card:hover {
-  transform: translateY(-5px); /* Slight lift effect */
-  transition: transform 0.3s ease;
-}
-
 .links:hover {
   filter: none; /* Restore color on hover */
   cursor: pointer;
+}
+
+/* Media Queries */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1200px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .card {
+    width: 80%; /* Ensure cards take most of the screen width */
+  }
+
+  .image {
+    max-width: 150px;
+  }
+
+  .name {
+    font-size: 1.25rem;
+  }
+
+  .role {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.875rem; /* Slightly smaller text for mobile */
+  }
+}
+
+/* For very small mobile devices */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .card-container {
+    gap: 10px;
+  }
+
+  .card {
+    width: 100%; /* Full width for smallest screens */
+  }
+
+  .image {
+    max-width: 120px;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+
+  .role {
+    font-size: 0.875rem;
+  }
+
+  .description {
+    font-size: 0.75rem; /* Smaller text for very small screens */
+  }
 }

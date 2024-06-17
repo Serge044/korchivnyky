@@ -1,9 +1,19 @@
+:root {
+  --pastel-blue: #a3cef1;
+  --pastel-pink: #f3bac3;
+  --pastel-yellow: #f9e79f;
+  --pastel-green: #abebc6;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
   padding: 30px;
   background-color: #ffffff;
   color: #000000;
+  justify-content: center; /* Центрувати вертикально */
+  align-items: center; /* Центрувати горизонтально */
+  height: auto;
 }
 
 .title {
@@ -16,6 +26,7 @@
 .numbers-container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -33,7 +44,7 @@
 }
 
 .card-container:hover {
-  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .image {
@@ -77,4 +88,89 @@
   height: 5px;
   background-color: var(--pastel-pink);
   margin: 8px auto 0;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .card-container {
+    width: 300px;
+    height: 400px;
+  }
+
+  .numbers {
+    font-size: 60px;
+  }
+
+  .text1 {
+    font-size: 20px;
+  }
+
+  .text2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .numbers-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-container {
+    width: 100%; /* Full width for small screens */
+    height: auto; /* Auto height to adjust to content */
+    margin-bottom: 20px;
+  }
+
+  .numbers {
+    font-size: 50px;
+  }
+
+  .text1 {
+    font-size: 18px;
+  }
+
+  .text2 {
+    font-size: 14px;
+  }
+
+  .image {
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px; /* Smaller font size for small screens */
+  }
+
+  .card-container {
+    width: 100%; /* Full width for small screens */
+    height: auto; /* Auto height to adjust to content */
+  }
+
+  .numbers {
+    font-size: 40px;
+  }
+
+  .text1 {
+    font-size: 16px;
+  }
+
+  .text2 {
+    font-size: 12px;
+  }
+
+  .image {
+    width: 80px;
+    height: 80px;
+  }
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Offers.module.css';
 
-function TestOffers() {
+function Offers() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -31,6 +31,7 @@ function TestOffers() {
         будь-яким зручним для вас способом або залишіть повідомлення через форму
         нижче:
       </p>
+
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.inputGroup}>
           <label htmlFor='name'>Ваше імʼя:</label>
@@ -63,8 +64,20 @@ function TestOffers() {
         </div>
         <button type='submit'>Submit</button>
       </form>
+
+      <div className={styles.instagramSection}>
+        <p>Ви також можете зв'язатися з нами через Instagram:</p>
+        <a
+          href='https://www.instagram.com/korchivnyky/'
+          target='_blank'
+          rel='noopener noreferrer'
+          className={styles.instagramLink}
+        >
+          Зв'язатися через Instagram
+        </a>
+      </div>
     </div>
   );
 }
 
-export default TestOffers;
+export default Offers;

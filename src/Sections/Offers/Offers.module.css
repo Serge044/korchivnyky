@@ -17,6 +17,26 @@
   margin-bottom: 2rem; /* Spacing */
 }
 
+.instagramSection {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px; /* Add some spacing below */
+}
+
+.instagramLink {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e1306c; /* Instagram color */
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.instagramLink:hover {
+  background-color: #c1275d; /* Darker Instagram color on hover */
+}
+
 .form {
   background-color: #f3f3f3; /* Light grey background for the form */
   border-radius: 8px;

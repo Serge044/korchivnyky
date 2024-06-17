@@ -8,7 +8,6 @@ const ResultInNumbersCard = ({ number, text1, text2, imageSrc, imageAlt }) => {
       <p className={styles.numbers}>{number}</p>
       <p className={styles.text1}>{text1}</p>
       <hr className={styles.line} />
-
       <p className={styles.text2}>{text2}</p>
     </div>
   );

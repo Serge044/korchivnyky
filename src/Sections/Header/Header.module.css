@@ -9,13 +9,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 300px; /* Reduced for a more standard header size */
+  height: 100px; /* Adjusted for a more standard header size */
   background-color: #fff; /* White background */
-  padding: 0 30px;
-}
-
-.logo {
-  /* Add styles if necessary */
+  padding: 10px 30px;
 }
 
 .navigation {
@@ -23,10 +19,14 @@
   gap: 20px; /* Creates space between links */
 }
 
+.logo {
+  max-width: 150px; /* Adjusted size for logo */
+}
+
 .link {
   color: #000; /* Black text color */
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1rem; /* Adjust the font size */
   transition: color 0.3s ease;
 }
 
@@ -34,6 +34,7 @@
 .link:focus {
   color: var(--pastel-pink); /* Pastel color for hover state */
   text-decoration: underline; /* Adds an underline on hover/focus */
+  cursor: pointer;
 }
 
 .support {
@@ -48,20 +49,51 @@
   border-radius: 25px; /* Rounded edges */
   transition: background-color 0.3s, transform 0.3s;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .support:hover,
 .support:focus {
   background-color: var(--pastel-yellow); /* Pastel color for hover state */
-  transform: scale(1.05); /* Slight increase in size on hover */
+  transform: scale(1.15); /* Slight increase in size on hover */
   color: #000;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  /* Styles for tablets and smaller desktops */
   .header {
     flex-direction: column;
     height: auto;
     padding: 20px;
+  }
+
+  .navigation {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .logo {
+    max-width: 120px; /* Smaller logo size */
+  }
+
+  .link {
+    font-size: 0.9rem; /* Smaller font size */
+  }
+
+  .support {
+    margin-top: 15px;
+    font-size: 0.9rem; /* Smaller button font size */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Styles for mobile phones */
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
   }
 
   .navigation {
@@ -70,7 +102,16 @@
     gap: 10px;
   }
 
+  .logo {
+    max-width: 100px; /* Smaller logo size */
+  }
+
+  .link {
+    font-size: 0.9rem; /* Smaller font size */
+  }
+
   .support {
-    margin-top: 20px;
+    margin-top: 15px;
+    font-size: 0.9rem; /* Smaller button font size */
   }
 }

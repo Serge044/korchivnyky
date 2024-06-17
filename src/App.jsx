@@ -1,5 +1,6 @@
 import './App.css';
 
+import { Element } from 'react-scroll';
 import Header from './Sections/Header/Header';
 import AboutUs from './Sections/AboutUs/AboutUs';
 import ResultInNumbers from './Sections/ResultsInNumbers/ResultsInNumbers';
@@ -18,16 +19,27 @@ function App() {
     <div className='site-container'>
       <div className='site-content'>
         <Header />
-        <AboutUs />
+        <Element name='aboutUs'>
+          <AboutUs />
+        </Element>
+
         <ResultInNumbers />
-        <CurrentProjects />
-        <DonationFair />
+        <Element name='currentProjects'>
+          <CurrentProjects />
+        </Element>
+        <Element name='donationFair'>
+          <DonationFair />
+        </Element>
         <HowToHelpUs />
-        <PhotoReports />
+        <Element name='photoReports'>
+          <PhotoReports />
+        </Element>
         <Chevrons />
         <OurTeam />
         <OurСommunity />
-        <Offers />
+        <Element name='offers'>
+          <Offers />
+        </Element>
         <Footer />
       </div>
     </div>

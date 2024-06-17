@@ -1,29 +1,52 @@
 import styles from './Header.module.css';
 import LogoKorchivnyky from '../../reusableComponents/LogoKorchivnyky';
+import { Link } from 'react-scroll';
 
-const TestHeader = () => {
+const Header = () => {
   return (
     <header className={styles.header}>
       <LogoKorchivnyky className={styles.logo} />
 
       <nav className={styles.navigation}>
-        <a href='#projects' className={styles.link}>
-          Проєкти
-        </a>
-        <a href='#market' className={styles.link}>
+        <Link
+          to='currentProjects'
+          smooth={true}
+          duration={500}
+          className={styles.link}
+        >
+          Поточний збір
+        </Link>
+        <Link
+          to='donationFair'
+          smooth={true}
+          duration={500}
+          className={styles.link}
+        >
           Донатний ярмарок
-        </a>
-        <a href='#reports' className={styles.link}>
+        </Link>
+        <Link
+          to='photoReports'
+          smooth={true}
+          duration={500}
+          className={styles.link}
+        >
           Звіти
-        </a>
-        <a href='#contact' className={styles.link}>
+        </Link>
+        <Link to='offers' smooth={true} duration={500} className={styles.link}>
           Зворотній звʼязок
-        </a>
+        </Link>
       </nav>
 
-      <div className={styles.support}>підтримати ❤️</div>
+      <a
+        className={styles.support}
+        href='https://send.monobank.ua/jar/5cFpG9WWPU'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        підтримати ❤️
+      </a>
     </header>
   );
 };
 
-export default TestHeader;
+export default Header;

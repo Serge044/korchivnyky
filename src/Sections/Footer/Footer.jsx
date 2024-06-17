@@ -1,39 +1,76 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import styles from './Footer.module.css';
 import instaIcon from '../../img/іnstagram_icon.png';
-import tgIcon from '../../img/tgIcon.png';
-import xIcon from '../../img/xIcon.png';
 import LogoKorchivnyky from '../../reusableComponents/LogoKorchivnyky';
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <div className={styles['logoAndEmail']}>
-          <LogoKorchivnyky />
+        <div className={styles.logoAndEmail}>
+          <LogoKorchivnyky className={styles.logo} />
           <p className={styles.email}>korchivnyky@gmail.com</p>
         </div>
         <nav className={styles.links}>
           {[
-            'Про Корчівників',
-            'Проекти',
-            'Донатний ярмарок',
-            'Фотозвіт',
-            'Реалізація співпраці',
-            'Наша команда',
-            'Наші партнери',
+            <Link
+              to='aboutUs'
+              smooth={true}
+              duration={500}
+              className={styles.link}
+            >
+              Про Корчівників
+            </Link>,
+            <Link
+              to='currentProjects'
+              smooth={true}
+              duration={500}
+              className={styles.link}
+            >
+              Поточний збір
+            </Link>,
+            <Link
+              to='donationFair'
+              smooth={true}
+              duration={500}
+              className={styles.link}
+            >
+              Донатний ярмарок
+            </Link>,
+            <Link
+              to='photoReports'
+              smooth={true}
+              duration={500}
+              className={styles.link}
+            >
+              Звіти
+            </Link>,
+            <Link
+              to='offers'
+              smooth={true}
+              duration={500}
+              className={styles.link}
+            >
+              Зворотній звʼязок
+            </Link>,
           ].map((link, index) => (
-            <a key={index} href='#'>
+            <div key={index} className={styles.linkWrapper}>
               {link}
-            </a>
+            </div>
           ))}
         </nav>
-        <div className={styles['socials-and-support']}>
-          <button className={styles['support-button']}>Підтримати ❤️</button>
-          <div className={styles['social-icons']}>
+        <div className={styles.socialsAndSupport}>
+          <a
+            className={styles.supportButton}
+            href='https://send.monobank.ua/jar/5cFpG9WWPU'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Підтримати ❤️
+          </a>
+          <div className={styles.socialIcons}>
             <img src={instaIcon} alt='Instagram' className={styles.icon} />
-            <img src={xIcon} alt='X' className={styles.icon} />
-            <img src={tgIcon} alt='Telegram' className={styles.icon} />
           </div>
         </div>
       </div>

@@ -18,7 +18,7 @@ const ResultInNumbers = () => {
         <ResultInNumbersCard
           number='60+'
           text1='авто'
-          text2='вже передано, а нові авто вже зараз готуються до передачі.'
+          text2='вже передано, а нові авто прямо зараз готуються до передачі.'
           imageSrc={moneyImage}
           imageAlt='car image'
         />

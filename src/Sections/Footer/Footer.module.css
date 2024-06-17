@@ -1,3 +1,8 @@
+:root {
+  --pastel-blue: #a3cef1;
+  --pastel-pink: #f3bac3;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -12,44 +17,57 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
-.logo-and-email {
+.logoAndEmail {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center; /* Ensure text is centered */
+}
+
+.logo {
+  max-width: 150px;
+  width: 100%;
 }
 
 .email {
   margin-top: 10px;
   font-size: 18px;
   color: #666;
+  text-align: center;
 }
 
 .links {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
 }
 
-.links a {
+.linkWrapper {
+  display: flex;
+}
+
+.link {
   color: #666;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.links a:hover {
+.link:hover {
   color: #333;
 }
 
-.socials-and-support {
+.socialsAndSupport {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 
-.support-button {
+.supportButton {
   padding: 10px 20px;
   background-color: #666;
   color: #fff;
@@ -57,15 +75,12 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  text-decoration: none;
+  text-align: center;
 }
 
-.support-button:hover {
+.supportButton:hover {
   background-color: #333;
-}
-
-.social-icons {
-  display: flex;
-  gap: 20px;
 }
 
 .icon {
@@ -82,4 +97,98 @@
   background-color: #e0e0e0;
   color: #666;
   font-size: 14px;
+}
+
+/* Media Queries */
+
+/* Tablets and smaller desktops */
+@media (max-width: 768px) {
+  .container {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .socialsAndSupport {
+    align-items: center;
+  }
+
+  .link {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%; /* Ensure container takes full width on mobile */
+  }
+
+  .logoAndEmail {
+    align-items: center;
+    text-align: center; /* Ensure text is properly aligned */
+    width: 100%; /* Ensure full width to avoid overflow */
+  }
+
+  .logo {
+    max-width: 80px; /* Reduce logo size for small screens */
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .link {
+    font-size: 0.8rem;
+  }
+
+  .socialsAndSupport {
+    align-items: center;
+  }
+
+  .supportButton {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .email {
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    gap: 10px;
+  }
+
+  .logo {
+    max-width: 70px; /* Further reduce logo size for very small screens */
+  }
+
+  .link {
+    font-size: 0.75rem;
+  }
+
+  .supportButton {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .email {
+    font-size: 12px;
+  }
 }

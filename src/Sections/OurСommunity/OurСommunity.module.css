@@ -1,3 +1,8 @@
+:root {
+  --pastel-blue: #a3cef1;
+  --pastel-pink: #f3bac3;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -32,6 +37,11 @@
   background-color: #f8f8f8; /* Light grey, consider pastel accents */
   padding: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .image {
@@ -64,4 +74,94 @@
 .insta {
   width: 20px;
   margin-right: 5px;
+}
+
+/* Media Queries */
+
+/* Tablets and smaller desktops (768px and up) */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    gap: 15px; /* Adjust grid gap for tablets */
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .name {
+    font-size: 0.9rem;
+  }
+
+  .insta {
+    width: 18px;
+  }
+}
+
+/* Mobile devices (480px and up) */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for mobile devices */
+    gap: 10px; /* Adjust grid gap for mobile devices */
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .name {
+    font-size: 0.8rem;
+  }
+
+  .insta {
+    width: 16px;
+  }
+}
+
+/* Extra small mobile devices (375px and up) */
+@media (max-width: 375px) {
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* Still two columns */
+    gap: 5px; /* Adjust grid gap for very small screens */
+  }
+
+  .card {
+    padding: 8px;
+    margin: 5px;
+  }
+
+  .image {
+    width: 35px;
+    height: 35px;
+  }
+
+  .name {
+    font-size: 0.7rem;
+  }
+
+  .insta {
+    width: 14px;
+  }
 }

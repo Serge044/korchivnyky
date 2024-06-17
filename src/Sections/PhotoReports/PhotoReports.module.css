@@ -32,6 +32,10 @@
   cursor: pointer;
 }
 
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
 .image {
   width: 100%;
   max-width: 300px;
@@ -157,4 +161,36 @@ button {
 
 button:hover {
   background-color: var(--pastel-blue);
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    justify-content: center; /* Center cards */
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
 }
