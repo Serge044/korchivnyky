@@ -22,7 +22,6 @@ function PhotoReports() {
             <PhotoReportsCard />
             <PhotoReportsCard />
             <PhotoReportsCard />
-            {/* <TestPhotoReportsCard /> */}
           </>
         )}
       </div>
