@@ -80,7 +80,8 @@
 }
 
 .burger.active .line:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  margin-left: -2px;
+  transform: rotate(45deg) translate(4.5px, 1px);
 }
 
 .burger.active .line:nth-child(2) {
@@ -88,7 +89,8 @@
 }
 
 .burger.active .line:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+  margin-left: -2px;
+  transform: rotate(-45deg) translate(4.5px, -1px);
 }
 
 @media (max-width: 1200px) {

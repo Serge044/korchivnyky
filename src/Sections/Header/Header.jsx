@@ -73,6 +73,14 @@ const Header = () => {
         >
           Зворотній звʼязок
         </Link>
+        <a
+          href='/korchivnyky/faq'
+          className={styles.link}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          FAQ
+        </a>
       </nav>
 
       <a

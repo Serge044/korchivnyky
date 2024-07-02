@@ -54,6 +54,14 @@ const Footer = () => {
             >
               Зворотній звʼязок
             </Link>,
+            <a
+              href='/korchivnyky/faq'
+              className={styles.link}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              FAQ
+            </a>,
           ].map((link, index) => (
             <div key={index} className={styles.linkWrapper}>
               {link}
