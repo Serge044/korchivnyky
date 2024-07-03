@@ -114,6 +114,16 @@ const chevronData = [
     altText: 'Bureviy chevron',
     cardText: 'НГУ Буревій 24',
   },
+  {
+    imageSrc: bureviyShevronImage,
+    altText: 'Bureviy chevron',
+    cardText: 'НГУ Буревій 24',
+  },
+  {
+    imageSrc: bureviyShevronImage,
+    altText: 'Bureviy chevron',
+    cardText: 'НГУ Буревій 24',
+  },
 ];
 
 function Chevrons() {

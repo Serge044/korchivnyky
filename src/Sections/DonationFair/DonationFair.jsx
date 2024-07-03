@@ -37,31 +37,35 @@ const DonationFair = () => {
     },
   ];
 
-  if (showAllCards) {
-    cardsData.push(
-      {
-        imageSrc: donationFairImage,
-        altText: 'Flag with Budanov signature',
-        cardText: 'Тубус РПГ-30 від 401 ОСБ',
-        buttonText: 'Донат 100к грн',
-        link: 'https://www.google.com/',
-      },
-      {
-        imageSrc: donationFairImage,
-        altText: 'Flag with Budanov signature',
-        cardText: 'Тубус РПГ-30 від 401 ОСБ',
-        buttonText: 'Донат 100к грн',
-        link: 'https://www.google.com/',
-      },
-      {
-        imageSrc: donationFairImage,
-        altText: 'Flag with Budanov signature',
-        cardText: 'Тубус РПГ-30 від 401 ОСБ',
-        buttonText: 'Донат 100к грн',
-        link: 'https://www.google.com/',
-      }
-    );
-  }
+  const extraCards = [
+    {
+      imageSrc: donationFairImage,
+      altText: 'Flag with Budanov signature',
+      cardText: 'Тубус РПГ-30 від 401 ОСБ',
+      buttonText: 'Донат 100к грн',
+      link: 'https://www.google.com/',
+    },
+    {
+      imageSrc: donationFairImage,
+      altText: 'Flag with Budanov signature',
+      cardText: 'Тубус РПГ-30 від 401 ОСБ',
+      buttonText: 'Донат 100к грн',
+      link: 'https://www.google.com/',
+    },
+    {
+      imageSrc: donationFairImage,
+      altText: 'Flag with Budanov signature',
+      cardText: 'Тубус РПГ-30 від 401 ОСБ',
+      buttonText: 'Донат 100к грн',
+      link: 'https://www.google.com/',
+    },
+  ];
+
+  const isMobile = window.innerWidth <= 768;
+
+  const displayedCards = showAllCards
+    ? [...cardsData, ...extraCards]
+    : cardsData.slice(0, isMobile ? 1 : 4);
 
   return (
     <div className={styles['main-container']}>
@@ -76,7 +80,7 @@ const DonationFair = () => {
         </p>
       </div>
       <div className={styles['cards-container']}>
-        {cardsData.map((card, index) => (
+        {displayedCards.map((card, index) => (
           <DonationFairCard
             key={index}
             imageSrc={card.imageSrc}

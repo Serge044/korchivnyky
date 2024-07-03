@@ -57,7 +57,10 @@
 /* Desktop and larger screens */
 @media (min-width: 769px) {
   .cards-container {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    gap: 15px; /* Adjust grid gap for tablets */
   }
 
   .card {
@@ -65,7 +68,7 @@
   }
 
   .image {
-    width: 100px; /* Larger images for larger screens */
+    width: 70px; /* Larger images for larger screens */
   }
 
   .cardText {
@@ -76,16 +79,19 @@
 /* Tablets */
 @media (max-width: 768px) {
   .cards-container {
-    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
-    gap: 15px; /* Adjust grid gap for tablets */
+    /* grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    gap: 15px;  */
+    grid-template-columns: repeat(7, 1fr); /* Still 4 components in a row */
+    width: auto;
+    gap: 5px; /* Adjust the gap for very small screens */
   }
 
   .card {
-    padding: 15px;
+    padding: 2px;
   }
 
   .image {
-    width: 80px;
+    width: 50px;
   }
 
   .cardText {
@@ -94,44 +100,23 @@
 }
 
 /* Mobile devices */
+
 @media (max-width: 480px) {
   .cards-container {
-    grid-template-columns: repeat(
-      4,
-      1fr
-    ); /* 4 components in a row for mobile */
-    gap: 5px; /* Adjust the gap for smaller screens */
-  }
-
-  .card {
-    padding: 10px;
-  }
-
-  .image {
-    width: 60px; /* Smaller images for mobile screens */
-  }
-
-  .cardText {
-    font-size: 0.8rem; /* Smaller font size for mobile */
-  }
-}
-
-/* Extra small mobile devices */
-@media (max-width: 375px) {
-  .cards-container {
-    grid-template-columns: repeat(4, 1fr); /* Still 4 components in a row */
+    grid-template-columns: repeat(7, 1fr); /* Still 4 components in a row */
+    width: auto;
     gap: 5px; /* Adjust the gap for very small screens */
   }
 
   .card {
-    padding: 8px;
+    padding: 2px;
   }
 
   .image {
-    width: 50px; /* Smaller images for extra small screens */
+    width: 40px; /* Smaller images for extra small screens */
   }
 
   .cardText {
-    font-size: 0.7rem; /* Smaller font size for extra small screens */
+    display: none;
   }
 }

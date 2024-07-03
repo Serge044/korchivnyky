@@ -4,7 +4,7 @@ import photoReportsImage1 from '../../img/photoReports.jpeg';
 import photoReportsImage2 from '../../img/photoReports.jpeg';
 import photoReportsImage3 from '../../img/photoReports.jpeg';
 
-export const PhotoReportsCard = () => {
+export const PhotoReportsCard = ({ className = '' }) => {
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [animate, setAnimate] = useState(null);
@@ -85,7 +85,7 @@ export const PhotoReportsCard = () => {
           </div>
         </div>
       )}
-      <div className={styles.card} onClick={handleCardClick}>
+      <div className={`${styles.card} ${className}`} onClick={handleCardClick}>
         <img
           src={photoReportsImage1}
           alt='Korchivnyky and soldiers on the background of cars'

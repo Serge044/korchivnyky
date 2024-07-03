@@ -15,15 +15,14 @@ function PhotoReports() {
       <div className={styles['cards-container']}>
         <PhotoReportsCard />
         <PhotoReportsCard />
-        <PhotoReportsCard />
-        <PhotoReportsCard />
-        {showAll && (
-          <>
-            <PhotoReportsCard />
-            <PhotoReportsCard />
-            <PhotoReportsCard />
-          </>
-        )}
+        <PhotoReportsCard
+          className={!showAll ? styles['hidden-lt-1024'] : ''}
+        />
+        <PhotoReportsCard
+          className={!showAll ? styles['hidden-lt-1024'] : ''}
+        />
+        <PhotoReportsCard className={!showAll ? styles.hidden : ''} />
+        <PhotoReportsCard className={!showAll ? styles.hidden : ''} />
       </div>
       <div className={styles['more-reports-button']}>
         <button onClick={handleShowMore}>
