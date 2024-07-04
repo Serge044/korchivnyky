@@ -18,13 +18,6 @@
   text-align: center;
 }
 
-/* Include media query adjustments for responsive design */
-@media (max-width: 768px) {
-  .title {
-    font-size: 1.5rem; /* Slightly smaller on mobile */
-  }
-}
-
 .project-card {
   display: flex;
   flex-direction: column; /* Stack image and text vertically */
@@ -42,7 +35,8 @@
 }
 
 .image {
-  width: 100%; /* Responsive image width */
+  max-width: 700px; /* Responsive image width */
+  width: 100%;
   object-fit: cover; /* Cover fit for no distortion */
   border-radius: 10px; /* Rounded corners for image */
 }
@@ -67,6 +61,7 @@
   font-weight: bold; /* Bold font */
   cursor: pointer; /* Cursor for button */
   transition: background-color 0.2s ease-in-out; /* Animation for hover */
+  text-decoration: none;
 }
 
 .button:hover {
@@ -80,9 +75,16 @@
 }
 
 /* Media queries for responsive design */
+
+/* Include media query adjustments for responsive design */
+
 @media (max-width: 768px) {
   .project-card {
     flex-direction: column; /* Stack elements on smaller screens */
+  }
+
+  .title {
+    font-size: 1.5rem; /* Slightly smaller on mobile */
   }
 
   .text-container,

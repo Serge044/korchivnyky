@@ -15,7 +15,14 @@ const CurrentProjectsCard = () => {
           батальйону.
           <br /> Наразі наша мета 2.5 млн гривень.
         </p>
-        <button className={styles.button}>Підтримати</button>
+        <a
+          className={styles.button}
+          href='https://send.monobank.ua/jar/5wDRwy4M1r'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Підтримати
+        </a>
       </div>
     </div>
   );

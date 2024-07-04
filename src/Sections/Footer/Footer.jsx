@@ -10,7 +10,6 @@ const Footer = () => {
       <div className={styles.container}>
         <div className={styles.logoAndEmail}>
           <LogoKorchivnyky className={styles.logo} />
-          <p className={styles.email}>korchivnyky@gmail.com</p>
         </div>
         <nav className={styles.links}>
           {[
@@ -72,14 +71,13 @@ const Footer = () => {
           <a
             className={styles.supportButton}
             href='https://send.monobank.ua/jar/5cFpG9WWPU'
-            target='_blank'
-            rel='noopener noreferrer'
           >
             Підтримати ❤️
           </a>
           <div className={styles.socialIcons}>
             <img src={instaIcon} alt='Instagram' className={styles.icon} />
           </div>
+          <p className={styles.email}>korchivnyky@gmail.com</p>
         </div>
       </div>
       <div className={styles.rights}>
