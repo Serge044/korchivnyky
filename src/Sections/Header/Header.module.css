@@ -62,6 +62,7 @@
 
 .burger {
   display: none; /* Hidden by default */
+  margin-top: 5px;
   flex-direction: column;
   justify-content: space-around;
   height: 24px;

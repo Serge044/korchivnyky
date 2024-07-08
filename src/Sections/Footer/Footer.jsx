@@ -70,6 +70,8 @@ const Footer = () => {
         <div className={styles.socialsAndSupport}>
           <a
             className={styles.supportButton}
+            target='_blank'
+            rel='noopener noreferrer'
             href='https://send.monobank.ua/jar/5cFpG9WWPU'
           >
             Підтримати ❤️

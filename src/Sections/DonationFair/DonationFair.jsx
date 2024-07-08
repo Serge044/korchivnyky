@@ -65,7 +65,7 @@ const DonationFair = () => {
 
   const displayedCards = showAllCards
     ? [...cardsData, ...extraCards]
-    : cardsData.slice(0, isMobile ? 1 : 4);
+    : cardsData.slice(0, isMobile ? 2 : 4);
 
   return (
     <div className={styles['main-container']}>
