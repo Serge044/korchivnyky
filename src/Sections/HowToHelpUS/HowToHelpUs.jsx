@@ -1,6 +1,6 @@
 import styles from './HowToHelpUs.module.css';
 import HowToHelpUsCard from './HowToHelpUsCard';
-import howToHelpUsImage from '../../img/howToHelpUs.jpeg';
+import howToHelpUsImage from '../../img/Lada.jpeg';
 
 const HowToHelpUs = () => {
   return (
