@@ -7,9 +7,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 30px;
-  background-color: #f7f7f7;
+  /* align-items: center; */
+  /* padding: 10px 30px; */
   color: #333;
+  /* position: relative; */
+  /* height: 100px; */
 }
 
 .container {
