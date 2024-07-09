@@ -103,7 +103,7 @@
 
 @media (max-width: 480px) {
   .cards-container {
-    grid-template-columns: repeat(6, 1fr); /* Still 4 components in a row */
+    grid-template-columns: repeat(7, 1fr); /* Still 4 components in a row */
     width: auto;
     gap: 5px; /* Adjust the gap for very small screens */
   }
