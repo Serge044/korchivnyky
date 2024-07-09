@@ -139,8 +139,7 @@
   }
 
   .card-container {
-    height: auto; /* Auto height to adjust to content */
-    width: 300px;
+    width: calc(100vw - 40%);
   }
 
   .numbers {
